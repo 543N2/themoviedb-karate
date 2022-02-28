@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.feature1</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-02-28 02:19:34 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[5:33]"><span>[5:33]</span> <span>Get popular movies</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/feature1.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">API GET test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:33]</span>
+                <span class="scenario-name">Get popular movies</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1501</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://api.themoviedb.org/3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">136</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/movie/popular&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param api_key = &#39;0383f0931f7f6bb14fe64530a706ce6c&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1362</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">14:19:33.996 request:
+1 &gt; GET https://api.themoviedb.org/3/movie/popular?api_key=0383f0931f7f6bb14fe64530a706ce6c
+1 &gt; Host: api.themoviedb.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:19:34.744 response time in milliseconds: 743
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Date: Mon, 28 Feb 2022 19:19:30 GMT
+1 &lt; Server: openresty
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS
+1 &lt; Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After, Content-Length, Content-Range
+1 &lt; Cache-Control: public, max-age=21600
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 538648d6b175eaacef2ebee8f528f84e.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: BOG50-C1
+1 &lt; X-Amz-Cf-Id: UdnHXtkUhuI925HDTl-rDHnQnKXZxMu33g9H_BvcHu2lGMrqokfz6g==
+{&quot;page&quot;:1,&quot;results&quot;:[{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg&quot;,&quot;genre_ids&quot;:[28,12,878],&quot;id&quot;:634649,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Spider-Man: No Way Home&quot;,&quot;overview&quot;:&quot;Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.&quot;,&quot;popularity&quot;:7517.432,&quot;poster_path&quot;:&quot;/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg&quot;,&quot;release_date&quot;:&quot;2021-12-15&quot;,&quot;title&quot;:&quot;Spider-Man: No Way Home&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:8.3,&quot;vote_count&quot;:8460},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg&quot;,&quot;genre_ids&quot;:[16,35,10751,14],&quot;id&quot;:568124,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Encanto&quot;,&quot;overview&quot;:&quot;The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family with a unique gift from super strength to the power to heal—every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family&#39;s last hope.&quot;,&quot;popularity&quot;:3850.439,&quot;poster_path&quot;:&quot;/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg&quot;,&quot;release_date&quot;:&quot;2021-11-24&quot;,&quot;title&quot;:&quot;Encanto&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.8,&quot;vote_count&quot;:4767},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/usaZV7KB6Man9Rm9TyDAeQf7uVD.jpg&quot;,&quot;genre_ids&quot;:[27,9648,53],&quot;id&quot;:646385,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Scream&quot;,&quot;overview&quot;:&quot;Twenty-five years after a streak of brutal murders shocked the quiet town of Woodsboro, a new killer has donned the Ghostface mask and begins targeting a group of teenagers to resurrect secrets from the town’s deadly past.&quot;,&quot;popularity&quot;:3560.934,&quot;poster_path&quot;:&quot;/kZNHR1upJKF3eTzdgl5V8s8a4C3.jpg&quot;,&quot;release_date&quot;:&quot;2022-01-12&quot;,&quot;title&quot;:&quot;Scream&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7,&quot;vote_count&quot;:698},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/6qkeXdIEwqOuOWuxsomwnin2RdD.jpg&quot;,&quot;genre_ids&quot;:[28,12,53,10752],&quot;id&quot;:476669,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;The King&#39;s Man&quot;,&quot;overview&quot;:&quot;As a collection of history&#39;s worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them.&quot;,&quot;popularity&quot;:3507.4,&quot;poster_path&quot;:&quot;/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg&quot;,&quot;release_date&quot;:&quot;2021-12-22&quot;,&quot;title&quot;:&quot;The King&#39;s Man&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.1,&quot;vote_count&quot;:1503},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/eG0oOQVsniPAuecPzDD1B1gnYWy.jpg&quot;,&quot;genre_ids&quot;:[16,35,12,10751],&quot;id&quot;:774825,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;The Ice Age Adventures of Buck Wild&quot;,&quot;overview&quot;:&quot;The fearless one-eyed weasel Buck teams up with mischievous possum brothers Crash &amp; Eddie as they head off on a new adventure into Buck&#39;s home: The Dinosaur World.&quot;,&quot;popularity&quot;:2960.414,&quot;poster_path&quot;:&quot;/zzXFM4FKDG7l1ufrAkwQYv2xvnh.jpg&quot;,&quot;release_date&quot;:&quot;2022-01-28&quot;,&quot;title&quot;:&quot;The Ice Age Adventures of Buck Wild&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.3,&quot;vote_count&quot;:647},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/mruT954ve6P1zquaRs6XG0hA5k9.jpg&quot;,&quot;genre_ids&quot;:[53],&quot;id&quot;:800510,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Kimi&quot;,&quot;overview&quot;:&quot;A tech worker with agoraphobia discovers recorded evidence of a violent crime but is met with resistance when she tries to report it. Seeking justice, she must do the thing she fears the most: she must leave her apartment.&quot;,&quot;popularity&quot;:2785.625,&quot;poster_path&quot;:&quot;/okNgwtxIWzGsNlR3GsOS0i0Qgbn.jpg&quot;,&quot;release_date&quot;:&quot;2022-02-10&quot;,&quot;title&quot;:&quot;Kimi&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:6.3,&quot;vote_count&quot;:153},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/mqDnDhG5N6fn1H4MKQqr8E5wfeK.jpg&quot;,&quot;genre_ids&quot;:[80,18,53],&quot;id&quot;:597208,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Nightmare Alley&quot;,&quot;overview&quot;:&quot;An ambitious carnival man with a talent for manipulating people with a few well-chosen words hooks up with a female psychiatrist who is even more dangerous than he is.&quot;,&quot;popularity&quot;:2728.228,&quot;poster_path&quot;:&quot;/680klE0dIreQQOyWKFgNnCAJtws.jpg&quot;,&quot;release_date&quot;:&quot;2021-12-02&quot;,&quot;title&quot;:&quot;Nightmare Alley&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.2,&quot;vote_count&quot;:867},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/aTSA5zMWlVFTYBIZxTCMbLkfOtb.jpg&quot;,&quot;genre_ids&quot;:[27],&quot;id&quot;:632727,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Texas Chainsaw Massacre&quot;,&quot;overview&quot;:&quot;In this sequel, influencers looking to breathe new life into a Texas ghost town encounter Leatherface, an infamous killer who wears a mask of human skin.&quot;,&quot;popularity&quot;:2380.14,&quot;poster_path&quot;:&quot;/meRIRfADEGVo65xgPO6eZvJ0CRG.jpg&quot;,&quot;release_date&quot;:&quot;2022-02-18&quot;,&quot;title&quot;:&quot;Texas Chainsaw Massacre&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:5.1,&quot;vote_count&quot;:419},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/qBLEWvJNVsehJkEJqIigPsWyBse.jpg&quot;,&quot;genre_ids&quot;:[16,10751,14,35,12],&quot;id&quot;:585083,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Hotel Transylvania: Transformania&quot;,&quot;overview&quot;:&quot;When Van Helsing&#39;s mysterious invention, the \&quot;Monsterfication Ray,\&quot; goes haywire, Drac and his monster pals are all transformed into humans, and Johnny becomes a monster. In their new mismatched bodies, Drac and Johnny must team up and race across the globe to find a cure before it&#39;s too late, and before they drive each other crazy.&quot;,&quot;popularity&quot;:2325.902,&quot;poster_path&quot;:&quot;/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg&quot;,&quot;release_date&quot;:&quot;2022-02-25&quot;,&quot;title&quot;:&quot;Hotel Transylvania: Transformania&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:6.9,&quot;vote_count&quot;:156},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/eVSa4TpyXbOdk9fXSD6OcORJGtv.jpg&quot;,&quot;genre_ids&quot;:[53],&quot;id&quot;:803114,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;The Requin&quot;,&quot;overview&quot;:&quot;A couple on a romantic getaway find themselves stranded at sea when a tropical storm sweeps away their villa. In order to survive, they are forced to fight the elements, while sharks circle below.&quot;,&quot;popularity&quot;:2160.331,&quot;poster_path&quot;:&quot;/i0z8g2VRZP3dhVvvSMilbOZMKqR.jpg&quot;,&quot;release_date&quot;:&quot;2022-01-28&quot;,&quot;title&quot;:&quot;The Requin&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:4.5,&quot;vote_count&quot;:55},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg&quot;,&quot;genre_ids&quot;:[28,12,14,878],&quot;id&quot;:524434,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Eternals&quot;,&quot;overview&quot;:&quot;The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.&quot;,&quot;popularity&quot;:2099.68,&quot;poster_path&quot;:&quot;/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg&quot;,&quot;release_date&quot;:&quot;2021-11-03&quot;,&quot;title&quot;:&quot;Eternals&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.2,&quot;vote_count&quot;:4561},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/kQM7o3NIkruIZLoQ9E2XzZQ8Ujl.jpg&quot;,&quot;genre_ids&quot;:[28,35,80,10749,53],&quot;id&quot;:783461,&quot;original_language&quot;:&quot;hi&quot;,&quot;original_title&quot;:&quot;लूप लपेटा&quot;,&quot;overview&quot;:&quot;When her boyfriend loses a mobster&#39;s cash, Savi races against the clock to save the day — if only she can break out of a curious cycle of dead ends.&quot;,&quot;popularity&quot;:2076.654,&quot;poster_path&quot;:&quot;/mtLk7vugGWtMkO913Fg8zfM1YET.jpg&quot;,&quot;release_date&quot;:&quot;2022-02-04&quot;,&quot;title&quot;:&quot;Looop Lapeta&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:5.7,&quot;vote_count&quot;:17},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/cugmVwK0N4aAcLibelKN5jWDXSx.jpg&quot;,&quot;genre_ids&quot;:[16,28,14,12],&quot;id&quot;:768744,&quot;original_language&quot;:&quot;ja&quot;,&quot;original_title&quot;:&quot;僕のヒーローアカデミア THE MOVIE ワールド ヒーローズ ミッション&quot;,&quot;overview&quot;:&quot;A mysterious group called Humarize strongly believes in the Quirk Singularity Doomsday theory which states that when quirks get mixed further in with future generations, that power will bring forth the end of humanity. In order to save everyone, the Pro-Heroes around the world ask UA Academy heroes-in-training to assist them and form a world-classic selected hero team. It is up to the heroes to save the world and the future of heroes in what is the most dangerous crisis to take place yet in My Hero Academia.&quot;,&quot;popularity&quot;:2017.573,&quot;poster_path&quot;:&quot;/4NUzcKtYPKkfTwKsLjwNt8nRIXV.jpg&quot;,&quot;release_date&quot;:&quot;2021-08-06&quot;,&quot;title&quot;:&quot;My Hero Academia: World Heroes&#39; Mission&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.4,&quot;vote_count&quot;:79},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/tutaKitJJIaqZPyMz7rxrhb4Yxm.jpg&quot;,&quot;genre_ids&quot;:[35,16,10751,10402],&quot;id&quot;:438695,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Sing 2&quot;,&quot;overview&quot;:&quot;Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage.&quot;,&quot;popularity&quot;:1956.577,&quot;poster_path&quot;:&quot;/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg&quot;,&quot;release_date&quot;:&quot;2021-12-01&quot;,&quot;title&quot;:&quot;Sing 2&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:8.2,&quot;vote_count&quot;:2040},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/dK12GIdhGP6NPGFssK2Fh265jyr.jpg&quot;,&quot;genre_ids&quot;:[28,35,80,53],&quot;id&quot;:512195,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Red Notice&quot;,&quot;overview&quot;:&quot;An Interpol-issued Red Notice is a global alert to hunt and capture the world&#39;s most wanted. But when a daring heist brings together the FBI&#39;s top profiler and two rival criminals, there&#39;s no telling what will happen.&quot;,&quot;popularity&quot;:1764.309,&quot;poster_path&quot;:&quot;/wdE6ewaKZHr62bLqCn7A2DiGShm.jpg&quot;,&quot;release_date&quot;:&quot;2021-11-04&quot;,&quot;title&quot;:&quot;Red Notice&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:6.8,&quot;vote_count&quot;:3120},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/ilty8eu65u6vCJpyMva9ele8Qtm.jpg&quot;,&quot;genre_ids&quot;:[35,10749,10402],&quot;id&quot;:615904,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Marry Me&quot;,&quot;overview&quot;:&quot;Music superstars Kat Valdez and Bastian are getting married before a global audience of fans. But when Kat learns, seconds before her vows, that Bastian has been unfaithful, she decides to marry Charlie, a stranger in the crowd, instead.&quot;,&quot;popularity&quot;:1741.374,&quot;poster_path&quot;:&quot;/ko1JVbGj4bT8IhCWqjBQ6ZtF2t.jpg&quot;,&quot;release_date&quot;:&quot;2022-02-09&quot;,&quot;title&quot;:&quot;Marry Me&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:6.9,&quot;vote_count&quot;:195},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/xHRabofjmMGoIV3mb6xgy4nwOcS.jpg&quot;,&quot;genre_ids&quot;:[27],&quot;id&quot;:801071,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;The Jack in the Box: Awakening&quot;,&quot;overview&quot;:&quot;When a vintage Jack-in-the-box is opened by a dying woman, she enters into a deal with the demon within that would see her illness cured in return for helping it claim six innocent victims.&quot;,&quot;popularity&quot;:1659.28,&quot;poster_path&quot;:&quot;/3Ib8vlWTrAKRrTWUrTrZPOMW4jp.jpg&quot;,&quot;release_date&quot;:&quot;2022-01-03&quot;,&quot;title&quot;:&quot;The Jack in the Box: Awakening&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:5.4,&quot;vote_count&quot;:34},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/wMUPT99gw6IB9OVvC46rF8wHIRt.jpg&quot;,&quot;genre_ids&quot;:[28,80,14],&quot;id&quot;:890656,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Fistful of Vengeance&quot;,&quot;overview&quot;:&quot;A revenge mission becomes a fight to save the world from an ancient threat when superpowered assassin Kai tracks a killer to Bangkok.&quot;,&quot;popularity&quot;:1623.29,&quot;poster_path&quot;:&quot;/3cccEF9QZgV9bLWyupJO41HSrOV.jpg&quot;,&quot;release_date&quot;:&quot;2022-02-17&quot;,&quot;title&quot;:&quot;Fistful of Vengeance&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:5.4,&quot;vote_count&quot;:69},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/EnDlndEvw6Ptpp8HIwmRcSSNKQ.jpg&quot;,&quot;genre_ids&quot;:[14,35,12],&quot;id&quot;:425909,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Ghostbusters: Afterlife&quot;,&quot;overview&quot;:&quot;When a single mom and her two kids arrive in a small town, they begin to discover their connection to the original Ghostbusters and the secret legacy their grandfather left behind.&quot;,&quot;popularity&quot;:1556.443,&quot;poster_path&quot;:&quot;/sg4xJaufDiQl7caFEskBtQXfD4x.jpg&quot;,&quot;release_date&quot;:&quot;2021-11-11&quot;,&quot;title&quot;:&quot;Ghostbusters: Afterlife&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:7.7,&quot;vote_count&quot;:2137},{&quot;adult&quot;:false,&quot;backdrop_path&quot;:&quot;/t4To8feUSysyBs4tlBAbXIrKlCv.jpg&quot;,&quot;genre_ids&quot;:[28,53],&quot;id&quot;:860623,&quot;original_language&quot;:&quot;en&quot;,&quot;original_title&quot;:&quot;Last Man Down&quot;,&quot;overview&quot;:&quot;After civilization succumbs to a deadly pandemic and his wife is murdered, a special forces soldier abandons his duty and becomes a hermit in the Nordic wilderness. Years later, a wounded woman appears on his doorstep. She&#39;s escaped from a lab and her pursuers believe her blood is the key to a worldwide cure. He&#39;s hesitant to get involved, but all doubts are cast aside when he discovers her pursuer is none other than Commander Stone, the man that murdered his wife some years ago.&quot;,&quot;popularity&quot;:1466.639,&quot;poster_path&quot;:&quot;/4B7liCxNCZIZGONmAMkCnxVlZQV.jpg&quot;,&quot;release_date&quot;:&quot;2021-10-19&quot;,&quot;title&quot;:&quot;Last Man Down&quot;,&quot;video&quot;:false,&quot;vote_average&quot;:6.4,&quot;vote_count&quot;:286}],&quot;total_pages&quot;:32531,&quot;total_results&quot;:650614}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
